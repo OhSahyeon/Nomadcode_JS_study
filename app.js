@@ -1,35 +1,10 @@
-//간단한 계산기
-const calcultor = {
-  a1: function(a, b){
-    console.log( a + b);
-  },
-  a2: function(a, b){
-    console.log( a - b);
-  },
-  a3: function(a, b){
-    console.log( a / b);
-  },
-  a4: function(a, b){
-    console.log( a * b);
-  },
-  a5: function(a, b){
-    console.log( a ** b);
-  }
-};
+//나이 값 가져오기
+let age = parseInt(prompt('How old are you?'));
 
-calcultor.a1(100, 10)
-calcultor.a2(100, 10)
-calcultor.a3(100, 10)
-calcultor.a4(100, 10)
-calcultor.a5(100, 10)
+if(isNaN(age)){
+  alert("숫자를 입력해주세요.")
+} else {
+  alert("Thank you.")
+}
 
-//간단한 통합 계산기
-function allCalcultor (a, b){
-  console.log( a + b);
-  console.log( a - b);
-  console.log( a / b);
-  console.log( a * b);
-  console.log( a ** b);
-};
-
-allCalcultor (100, 10);
+console.log(age)
