@@ -4,7 +4,7 @@ console.dir(title)
 function handleTitleClick () {
   const titleColor = title.style.color; 
   let newColor;
-  if(titleColor === "blue") {
+  if(titleColor === "blue") { 
     newColor = "red"
   } else {
     newColor = "blue"
