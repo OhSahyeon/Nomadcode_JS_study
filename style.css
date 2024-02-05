@@ -4,9 +4,10 @@ body{
 
 #title {
   cursor: pointer;
+  transition: 1s ease-in-out;
 }
 
-.off {
+h1 {
   color: blue;
 }
 

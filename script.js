@@ -1,17 +1,8 @@
 const title = document.querySelector("#title")
 console.dir(title)
 
-function handleTitleClick () {
-  const status = title.className; 
-  const offClassName = "off";
-  const onClassName = "on";
-  if(title.classList.contains(offClassName)) {
-    title.classList.remove(offClassName)
-    title.classList.add(onClassName)
-  } else {
-    title.classList.remove(onClassName)
-    title.classList.add(offClassName)
-  }
+function handleTitleClick () { 
+  title.classList.toggle("on")
   console.log(title.className)
 }
 
