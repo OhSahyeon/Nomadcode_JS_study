@@ -4,13 +4,14 @@ console.dir(title)
 function handleTitleClick () {
   const status = title.className; 
   const offClassName = "off";
-  let newStatus;
-  if(status === offClassName) {
-    newStatus = "active"
+  const onClassName = "on";
+  if(title.classList.contains(offClassName)) {
+    title.classList.remove(offClassName)
+    title.classList.add(onClassName)
   } else {
-    newStatus = offClassName
+    title.classList.remove(onClassName)
+    title.classList.add(offClassName)
   }
-  title.className = newStatus
   console.log(title.className)
 }
 
