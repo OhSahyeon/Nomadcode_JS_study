@@ -5,3 +5,11 @@ body{
 #title {
   cursor: pointer;
 }
+
+.off {
+  color: blue;
+}
+
+.active {
+  color: red;
+}

@@ -2,15 +2,16 @@ const title = document.querySelector("#title")
 console.dir(title)
 
 function handleTitleClick () {
-  const titleColor = title.style.color; 
-  let newColor;
-  if(titleColor === "blue") { 
-    newColor = "red"
+  const status = title.className; 
+  const offClassName = "off";
+  let newStatus;
+  if(status === offClassName) {
+    newStatus = "active"
   } else {
-    newColor = "blue"
+    newStatus = offClassName
   }
-  title.style.color = newColor
-  console.log(title.style.color)
+  title.className = newStatus
+  console.log(title.className)
 }
 
 title.addEventListener("click", handleTitleClick)
