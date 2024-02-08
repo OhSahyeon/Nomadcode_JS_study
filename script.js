@@ -12,8 +12,10 @@ function clickLoginBtn(e){
 
   loginForm.classList.add(CLASSNAME_HIDDEN);
 
+  localStorage.setItem("nameValue", nameValue)
   greeting.innerText = `Hello ${nameValue}`;
   greeting.classList.remove(CLASSNAME_HIDDEN)
+  localStorage.getItem("nameValue")
 };
 
 console.log(loginInput);
