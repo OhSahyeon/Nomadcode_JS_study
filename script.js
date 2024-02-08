@@ -6,9 +6,8 @@ const CLASSNAME_HIDDEN = "hidden";
 const KEY_NAMEVALUE = "nameValue";
 let getUserName = localStorage.getItem(KEY_NAMEVALUE)
 
-loginForm.addEventListener("submit", clickLoginBtn);
-
 if (getUserName === null){
+  loginForm.addEventListener("submit", clickLoginBtn);
   loginForm.classList.remove(CLASSNAME_HIDDEN)
 } else {
   changeGreeting()
@@ -27,3 +26,14 @@ function changeGreeting(){
   greeting.innerText = `Hello ${getUserName}`;
   greeting.classList.remove(CLASSNAME_HIDDEN)
 }
+
+const 보따리 = {
+  사과: `1,000원`,
+  수박: `1,000원`,
+  멜론: `1,000원`,
+  포도: `1,000원`,
+}
+
+보따리.사과 = `2,000원`
+
+console.log(보따리.사과)
