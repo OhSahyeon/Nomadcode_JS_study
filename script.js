@@ -4,14 +4,14 @@ const greeting = document.querySelector("#greeting");
 
 const CLASSNAME_HIDDEN = "hidden";
 const KEY_NAMEVALUE = "nameValue";
-const getUserName = localStorage.getItem(KEY_NAMEVALUE)
+let getUserName = localStorage.getItem(KEY_NAMEVALUE)
 
 loginForm.addEventListener("submit", clickLoginBtn);
 
 if (getUserName === null){
   loginForm.classList.remove(CLASSNAME_HIDDEN)
 } else {
-  changeGreeting(getUserName)
+  changeGreeting()
 }
 
 function clickLoginBtn(e){
@@ -19,10 +19,11 @@ function clickLoginBtn(e){
   const nameValue = loginInput.value;
   loginForm.classList.add(CLASSNAME_HIDDEN);
   localStorage.setItem(KEY_NAMEVALUE, nameValue)
-  changeGreeting(nameValue)
+  changeGreeting()
 };
 
-function changeGreeting(name){
-  greeting.innerText = `Hello ${name}`;
+function changeGreeting(){
+  getUserName = localStorage.getItem(KEY_NAMEVALUE)
+  greeting.innerText = `Hello ${getUserName}`;
   greeting.classList.remove(CLASSNAME_HIDDEN)
 }
