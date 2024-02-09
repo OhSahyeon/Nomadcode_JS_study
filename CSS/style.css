@@ -1,4 +1,11 @@
+* {
+  z-index: 1;
+  color: white;
+}
+
 body {
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,8 +13,40 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  background-color: black;
 }
 
 .hidden {
   display: none;
+}
+
+#greeting {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  background-color: rgba(255, 255, 255, 0.760);
+  padding: 8px 20px;
+  color: black;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#quote {
+  position: absolute;
+  bottom: 20px;
+}
+
+#bgImg {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#bgImg img{
+  position: absolute;
+  margin-top: -200px;
+  width: 100%;
+  filter: blur(10px);
 }
