@@ -37,6 +37,11 @@ body {
   border: none;
 }
 
+#login-form input::placeholder {
+  position: absolute;
+  left: 8%
+}
+
 #login-form button{
   cursor: pointer;
   box-sizing: border-box;
@@ -44,11 +49,6 @@ body {
   font-size: 20px;
   border-radius: 30px;
   margin-left: 10px;
-}
-
-::placeholder {
-  position: absolute;
-  left: 8%
 }
 
 #greeting {
