@@ -1,6 +1,5 @@
 * {
   z-index: 1;
-  color: white;
 }
 
 body {
@@ -20,6 +19,38 @@ body {
   display: none;
 }
 
+#login-form {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  padding: 100% 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.700);
+}
+
+#login-form input {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 30px;
+  background-color: white;
+  border: none;
+}
+
+#login-form button{
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+::placeholder {
+  position: absolute;
+  left: 8%
+}
+
 #greeting {
   box-sizing: border-box;
   position: absolute;
@@ -31,9 +62,30 @@ body {
   font-size: 20px;
 }
 
+#clock {
+  color: white;
+  font-size: 222px;
+}
+
 #quote {
+  color: white;
+  cursor: pointer;
   position: absolute;
-  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: -28px;
+  padding-bottom: 10px;
+  transition: 0.45s;
+}
+
+#quote span:last-child {
+  margin-top: 4px;
+}
+
+#quote:hover {
+  bottom: 0px;
 }
 
 #bgImg {
