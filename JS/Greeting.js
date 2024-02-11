@@ -5,8 +5,6 @@ const greeting = document.querySelector("#greeting");
 const CLASSNAME_HIDDEN = "hidden";
 const KEY_NAMEVALUE = "nameValue";
 let getUserName = localStorage.getItem(KEY_NAMEVALUE)
-console.log(getUserName)
-console.log(loginForm)
 
 if (getUserName === null){
   loginForm.addEventListener("submit", clickLoginBtn);
