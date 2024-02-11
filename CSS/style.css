@@ -90,15 +90,15 @@ body {
 
 #bgImg {
   z-index: 0;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
 
 #bgImg img{
-  position: absolute;
-  margin-top: -200px;
-  width: 100%;
-  filter: blur(10px);
+  position:absolute;
+  width:100%;
+  height:100%;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom:0px;
+  z-index: 0;
 }
