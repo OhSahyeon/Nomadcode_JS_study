@@ -63,8 +63,10 @@ body {
 }
 
 #clock {
+  position: absolute;
+  top: 0;
   color: white;
-  font-size: 222px;
+  font-size: 100px;
 }
 
 #quote {
@@ -95,7 +97,6 @@ body {
 #bgImg img{
   position:absolute;
   width:100%;
-  height:100%;
   left: 0px;
   top: 0px;
   right:0px;

@@ -2,10 +2,17 @@ const toDoForm = document.querySelector("#todo-form")
 const toDoInput = toDoForm.querySelector("input")
 const toDoList= document.querySelector("#todo-list")
 
+const toDo = [];
+
+function saveToDos() {
+  localStorage.setItem("todos", JSON.stringify(toDo))
+}
+
 function deleteToDo(e) {
   const thisLi = e.target.parentElement
   thisLi.remove()
 }
+
 
 function paintToDo(newToDo) {
   const li = document.createElement("li")
@@ -23,6 +30,8 @@ function toDoSubmit(e){
   e.preventDefault();
   const newToDo = toDoInput.value
   toDoInput.value = "";
+  toDo.push(newToDo)
+  saveToDos()
   paintToDo(newToDo)
 };
 
