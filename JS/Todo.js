@@ -20,6 +20,7 @@ function saveToDos() {
 
 function deleteToDo(e) {
   const thisLi = e.target.parentElement
+  console.log(thisLi.id)
   thisLi.remove()
 }
 
