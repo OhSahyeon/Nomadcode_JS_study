@@ -62,11 +62,69 @@ body {
   font-size: 20px;
 }
 
+#weather{
+  position: absolute;
+  top: 205px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
 #clock {
   position: absolute;
   top: 0;
   color: white;
   font-size: 100px;
+}
+
+#list_box {
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 20px 25px;
+  position: absolute;
+  top: 280px;
+  width: 400px;
+  height: 550px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#list_box::-webkit-scrollbar {
+  display: none;
+}
+
+ul{
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 20px;
+}
+
+form input{
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 100%;
+  border: 2px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+
+li button {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
 }
 
 #quote {
@@ -97,6 +155,7 @@ body {
 #bgImg img{
   position:absolute;
   width:100%;
+  height: 100%;
   left: 0px;
   top: 0px;
   right:0px;
