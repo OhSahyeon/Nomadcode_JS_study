@@ -112,7 +112,7 @@ li {
   border-radius: 20px;
 }
 
-form input{
+.input{
   box-sizing: border-box;
   padding: 5px 10px;
   width: 100%;
@@ -138,6 +138,7 @@ li button {
   bottom: -28px;
   padding-bottom: 10px;
   transition: 0.45s;
+  font-size: 15px;
 }
 
 #quote span:last-child {
@@ -161,4 +162,5 @@ li button {
   right:0px;
   bottom:0px;
   z-index: 0;
+  /* filter: blur(8px); */
 }
